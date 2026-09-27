@@ -1,0 +1,12 @@
+{
+  "name": "@relay/protocol",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types and interfaces for the Relay coordination protocol",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["ai", "agents", "locks", "protocol"],
+  "license": "MIT"
+}

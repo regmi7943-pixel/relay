@@ -3,11 +3,9 @@
     "target": "ES2022",
     "module": "commonjs",
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@relay/protocol": ["packages/protocol/src/index.ts"],
-      "@relay/core": ["packages/core/src/index.ts"]
-    },
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -16,12 +14,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "packages/*/src/**/*",
-    "examples/**/*"
+  "references": [
+    { "path": "../protocol" }
   ],
-  "exclude": [
-    "node_modules",
-    "apps"
-  ]
+  "include": ["src/**/*"]
 }
